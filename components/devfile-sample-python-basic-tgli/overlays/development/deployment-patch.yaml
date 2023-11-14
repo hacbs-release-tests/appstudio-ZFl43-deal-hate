@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-python-basic-tgli
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/qijing/release-e2e-pyxis-tenant/appstudio/devfile-sample-python-basic-tgli@sha256:561e55231bd83931269fdcd9437850fe428cbfe5b272e2e659e961b2e99f31fa
+        name: container-image
+        resources: {}
+status: {}
